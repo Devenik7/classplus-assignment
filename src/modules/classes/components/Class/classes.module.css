@@ -1,0 +1,48 @@
+.container {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin: 8px;
+    /* width: max-content; */
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sectionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionContainer {
+    display: flex;
+    margin: 12px 12px 12px 0;
+}
+
+.sectionDecorationLeft {
+    min-height: 95%;
+    width: 2px;
+    border-radius: 1px;
+    background-color: var(--theme-color);
+    opacity: 0.5;
+    margin-right: 8px;
+}
+
+.section {
+    flex: 1;
+}
+
+.dialogClose {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.dialogClose:hover {
+    background-color: var(--bg-grey-mild-hover);
+    transform: rotate(90deg);
+}

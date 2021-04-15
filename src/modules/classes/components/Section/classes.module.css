@@ -1,0 +1,17 @@
+.container {
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+.studentsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.student {
+    margin: 4px;
+}
