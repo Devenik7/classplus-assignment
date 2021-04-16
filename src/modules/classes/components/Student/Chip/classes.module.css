@@ -1,23 +1,23 @@
 .container {
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 30px;
     border: var(--border-mild);
-    padding: 8px 12px 8px 10px;
+    padding: 6px 14px 6px 8px;
     width: max-content;
     display: flex;
     align-items: center;
-    min-width: 70px;
-    background-color: var(--bg-grey-mild);
-    transition: background-color 0.25s ease;
+    background-color: var(--theme-color);
+    opacity: 0.75;
+    transition: opacity 0.25s ease;
 }
 
 .container:hover {
-    background-color: var(--bg-grey-mild-hover);
+    opacity: 1;
 }
 
 .name {
     font-weight: 600;
-    color: var(--theme-color);
+    color: var(--text-color-opposite);
     margin-left: 8px;
 }
 

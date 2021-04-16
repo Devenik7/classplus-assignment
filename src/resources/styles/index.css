@@ -18,6 +18,8 @@ code {
     --shadow-mild: 0px 0px 5px #ccc;
     --backdrop: #0006;
     --border-mild: 1px solid #f7f7f7;
+    --text-color: #000;
+    --text-color-opposite: #fff;
 }
 
 .fillSpace {

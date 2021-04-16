@@ -25,7 +25,8 @@ export default class StudentChip extends React.PureComponent {
         const { name } = data;
         return <Tooltip tip={this.renderTooltip()}>
             <div className={`${classes.container} ${className || ''}`} onClick={this.onClick}>
-                <User /><div className={classes.name}>{name}</div>
+                <User width={20} height={20} fill='var(--text-color-opposite)' />
+                <div className={classes.name}>{name}</div>
             </div>
         </Tooltip>;
     }

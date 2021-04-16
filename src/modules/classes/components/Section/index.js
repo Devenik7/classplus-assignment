@@ -20,6 +20,8 @@ export default class Section extends React.PureComponent {
         const { className, id } = this.props;
         return <div className={`${classes.container} ${className || ''}`}>
             <div className={classes.name}>Section {id}</div>
+
+            <div className={classes.studentsTitle}>Students</div>
             {this.renderStudents()}
         </div>;
     }

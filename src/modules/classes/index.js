@@ -1,5 +1,6 @@
 import React from 'react';
 
+import classes from './classes.module.css';
 import Class from './components/Class';
 import { isEmptyObject } from '../../utils';
 import { fetchStudents } from './interactor';
@@ -25,7 +26,7 @@ export default class Classes extends React.PureComponent {
 
     renderError = () => null;
 
-    render = () => <div>
+    render = () => <div className={classes.container}>
         {this.renderClasses()}
         {this.renderError()}
     </div>;

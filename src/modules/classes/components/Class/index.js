@@ -25,12 +25,14 @@ export default class Class extends React.PureComponent {
     renderSections = () => {
         const { sections } = this.props;
 
-        return isEmptyObject(sections) ? null : <div className={classes.sectionsContainer}>{Object.keys(sections).map(key =>
-            <div className={classes.sectionContainer}>
-                <div className={classes.sectionDecorationLeft} />
-                <Section key={key} id={key} students={sections[key]} onStudentClick={this.onStudentClick} className={classes.section} />
+        return isEmptyObject(sections) ? null : <>
+            <div className={classes.sectionsTitle}>Sections</div>
+            <div className={classes.sectionsContainer}>
+                {Object.keys(sections).map(key =>
+                    <Section key={key} id={key} students={sections[key]} onStudentClick={this.onStudentClick} className={classes.section} />
+                )}
             </div>
-        )}</div>;
+        </>;
     }
 
     render = () => {

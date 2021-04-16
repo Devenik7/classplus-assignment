@@ -1,15 +1,40 @@
 .container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 8px;
+    padding: 12px;
+    min-width: 200px;
 }
 
 .name {
     font-size: 20px;
     font-weight: 600;
-    padding: 4px;
+    padding: 2px 8px 6px;
+}
+
+.studentsTitle {
+    margin-top: 8px;
+    padding: 8px 8px 4px;
+    margin-left: 2px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .studentsContainer {
     display: flex;
     flex-wrap: wrap;
+}
+
+.studentsContainer::-webkit-scrollbar {
+    height: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .studentsContainer {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
 }
 
 .student {
